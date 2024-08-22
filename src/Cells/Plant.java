@@ -1,4 +1,11 @@
 package Cells;
 
-public class Plant {
+
+
+public class Plant extends Cell {
+    @Override
+    public char getSymbol() {
+        return '.';
+    }
 }
+

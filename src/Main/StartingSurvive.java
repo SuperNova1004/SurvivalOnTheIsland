@@ -1,31 +1,25 @@
 package Main;
 
 import Animals.Rabbit;
-import Animals.Rabbit;
 import Animals.Wolf;
 import Field.Field;
+import Threads.SimulatorThread;
 
 
-
-    public class StartingSurvive {
-        public static void main(String[] args) {
+public class StartingSurvive {
+        public static void main(String[] args) throws InterruptedException {
 
 
             Field field = new Field();
-            Rabbit rabbit = new Rabbit();
-            Wolf wolf = new Wolf();
+            Rabbit rabbit = new Rabbit(2,1);
+            Wolf wolf = new Wolf(4,2);
 
             field.placeAnimal(rabbit, rabbit.x, rabbit.y);
-            field.placeAnimal(wolff, wolf.x, wolf.y);
+            field.placeAnimal(wolf, wolf.x, wolf.y);
 
-            for (int i = 0; i < 10; i++) {
-                System.out.println("Шаг " + (i + 1));
-                rabbit.move(field);
-                wolf.move(field);
-                field.growPlant(); // рост травы
-                field.printField();
-                System.out.println();
-            }
+            SimulatorThread sumilation = new SimulatorThread(field, rabbit, wolf);
+            Thread thread = new Thread(sumilation);
+            thread.start();
         }
     }
 

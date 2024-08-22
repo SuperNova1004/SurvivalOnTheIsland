@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartingSurvive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingSurvive.java" afterDir="false" />
+    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="added &quot;meat&quot; on basic classes">
+      <change afterPath="$PROJECT_DIR$/src/Threads/SimulatorThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cells/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cells/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/StartingSurvive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartingSurvive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SuperNova1004"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/SuperNova1004/SurvivalOnTheIsland.git",
@@ -39,6 +61,31 @@
     "onboarding.tips.debug.path": "C:/Users/user/IdeaProjects/SurvivalOnTheIsland/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StartingSurvive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.StartingSurvive" />
+      <module name="SurvivalOnTheIsland" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StartingSurvive" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,17 +95,37 @@
       <option name="presentableId" value="Default" />
       <updated>1724362868457</updated>
     </task>
+    <task id="LOCAL-00001" summary="Переделываю уже 6 раз. В этот раз точно получится без ошибок ;D">
+      <option name="closed" value="true" />
+      <created>1724363253668</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724363253668</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added basic classes">
+      <option name="closed" value="true" />
+      <created>1724363395184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724363395184</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added &quot;meat&quot; on basic classes">
+      <option name="closed" value="true" />
+      <created>1724364381434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724364381434</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/StartingSurvive.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Переделываю уже 6 раз. В этот раз точно получится без ошибок ;D" />
+    <MESSAGE value="added basic classes" />
+    <MESSAGE value="added &quot;meat&quot; on basic classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &quot;meat&quot; on basic classes" />
   </component>
 </project>
