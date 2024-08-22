@@ -5,6 +5,8 @@ import Cells.Cell;
 import Cells.Plant;
 import java.util.Random;
 
+// создаём поле, на котором будет происходить экшен!
+
 public class Field {
 
     public static final int WIDTH = 5;
@@ -58,7 +60,7 @@ public class Field {
         }
     }
 
-    public void printField() {
+    public void printField() { // выводит текущую ситуацию на поле
 
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
@@ -72,7 +74,6 @@ public class Field {
         }
     }
 
-
     // метод, чтобы растения росли только на случайных пустых клетках
     public void growPlant() {
         int x = random.nextInt(WIDTH);
@@ -80,8 +81,7 @@ public class Field {
 
         if (grid[y][x].getAnimal() == null) {   // чтобы могла расти только на пустых клетках
             grid[y][x] = new Plant();
-            // TODO добавить стринг, чтоб была иконка травы
-            System.out.println("Трава выросла на позиции (" + x + ", " + y + ")");
+            System.out.println("Растения выросли на позиции (" + x + ", " + y + ")");
         }
     }
 }

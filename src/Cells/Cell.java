@@ -1,6 +1,7 @@
 package Cells;
 import Animals.Animal;
 
+// создаём клетки на поле
 
 public abstract class Cell {
 
@@ -14,6 +15,6 @@ public abstract class Cell {
         this.animal = animal;
     }
 
-    public abstract char getSymbol();
+    public abstract String getSymbol();
 
 }
