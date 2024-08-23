@@ -11,7 +11,7 @@ public class StartingSurvive {
     public static void main(String[] args) {
         Field field = new Field();
 
-        Animal rabbit = AnimalFactory.createAnimal("rabbit", 3, 8);
+        Animal rabbit = AnimalFactory.createAnimal("rabbit", 5, 5);
         Animal wolf = AnimalFactory.createAnimal("wolf", 10, 4);
 
         field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());

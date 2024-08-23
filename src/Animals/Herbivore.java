@@ -24,7 +24,7 @@ public abstract class Herbivore extends Animal {
     @Override
     public boolean canEat(Cell cell) {
 
-        return cell instanceof Plant; // вот тут и есть различие между
+        return cell instanceof Plant; // вот тут и есть различие между травоядными и плотоядными
     }
 }
 

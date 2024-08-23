@@ -22,6 +22,8 @@ public abstract class Predator extends Animal {
     }
 
     @Override
-    public abstract boolean canEat(Cell cell);
+    public boolean canEat(Cell cell) {
+        return cell.getAnimal() instanceof Rabbit;
+    }
 }
 
