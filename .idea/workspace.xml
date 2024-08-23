@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="added cosmetic changes">
-      <change afterPath="$PROJECT_DIR$/src/Animals/AnimalFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cells/CellFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cells/EmptyCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Field/SimulatorThread.java" afterDir="false" />
+    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="Полностью рабочая игрушка с сохранением прогресса">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Rabbit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Wolf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cells/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cells/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Field/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/StartingSurvive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartingSurvive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Threads/SimulatorThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field/SimulatorThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field/SimulatorThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724368713811</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Полностью рабочая игрушка с сохранением прогресса">
+      <option name="closed" value="true" />
+      <created>1724374317124</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724374317124</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +150,7 @@
     <MESSAGE value="added &quot;meat&quot; on basic classes" />
     <MESSAGE value="Первый рабочий прототип программы с одним потоком, 1 зайцем и 1 волком. Это, определённо, успех!" />
     <MESSAGE value="added cosmetic changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cosmetic changes" />
+    <MESSAGE value="Полностью рабочая игрушка с сохранением прогресса" />
+    <option name="LAST_COMMIT_MESSAGE" value="Полностью рабочая игрушка с сохранением прогресса" />
   </component>
 </project>

@@ -10,8 +10,8 @@ import java.util.Random;
 
 public class Field {
 
-    public static final int WIDTH = 5;
-    public static final int HEIGHT = 5;
+    public static final int WIDTH = 15;
+    public static final int HEIGHT = 15;
     private Cell[][] grid;
     private Random random = new Random();
 

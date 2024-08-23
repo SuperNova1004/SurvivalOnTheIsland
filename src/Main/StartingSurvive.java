@@ -3,7 +3,7 @@ package Main;
 import Animals.Animal;
 import Animals.AnimalFactory;
 import Field.Field;
-import Field.SimulatorThread;
+import Threads.SimulatorThread;
 
 
 public class StartingSurvive {
@@ -11,8 +11,8 @@ public class StartingSurvive {
     public static void main(String[] args) {
         Field field = new Field();
 
-        Animal rabbit = AnimalFactory.createAnimal("rabbit", 2, 1);
-        Animal wolf = AnimalFactory.createAnimal("wolf", 4, 2);
+        Animal rabbit = AnimalFactory.createAnimal("rabbit", 3, 8);
+        Animal wolf = AnimalFactory.createAnimal("wolf", 10, 4);
 
         field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());
         field.placeAnimal(wolf, wolf.getX(), wolf.getY());
