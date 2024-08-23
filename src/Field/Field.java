@@ -2,88 +2,89 @@ package Field;
 
 import Animals.Animal;
 import Cells.Cell;
-import Cells.Plant;
+import Cells.CellFactory;
+import Cells.EmptyCell;
 import java.util.Random;
 
-// создаём поле, на котором будет происходить экшен!
+// создаём поле, на котором будет происходить экшен!!
 
 public class Field {
 
     public static final int WIDTH = 5;
-    public static final int HEIGHT = 3;
+    public static final int HEIGHT = 5;
     private Cell[][] grid;
     private Random random = new Random();
 
     public Field() {
-
         grid = new Cell[HEIGHT][WIDTH];
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
-                grid[i][j] = new Plant();
+                grid[i][j] = CellFactory.createCell("empty");
             }
         }
     }
 
-    public void placeAnimal (Animal animal, int x, int y) {
-
-        grid[y][x].setAnimal(animal); // размещение животного
+    public void placeAnimal(Animal animal, int x, int y) {
+        if (grid[y][x].getAnimal() != null) {
+            System.out.println("Клетка (" + x + ", " + y + ") уже занята.");
+        }
+        grid[y][x].setAnimal(animal);
+        animal.setPosition(x, y);
     }
 
-    public void moveAnimal (Animal animal, int newX, int newY) {    // удаление животного с текущей позиции
+    public void moveAnimal(Animal animal, int newX, int newY) {
+        int oldX = animal.getX();
+        int oldY = animal.getY();
 
-        for (int i = 0; i < HEIGHT; i++) {
-            for (int j = 0; j < WIDTH; j++) {
-                if (grid[i][j].getAnimal() == animal) {
-                    grid[i][j].setAnimal(null);
-                    break;
-                }
-            }
-        }
+        grid[oldY][oldX].setAnimal(null);
 
         Cell newCell = grid[newY][newX];
         Animal otherAnimal = newCell.getAnimal();
 
         if (animal.canEat(newCell)) {
-            if (otherAnimal !=null) {
+            if (otherAnimal != null) {
                 System.out.println(animal.getSymbol() + " съел " + otherAnimal.getSymbol() + "!");
             } else {
                 System.out.println(animal.getSymbol() + " съел растение!");
             }
-
-            newCell.setAnimal(animal); // животное перемещается на новую клетку
+            newCell.setAnimal(animal);
         } else if (otherAnimal == null) {
-            newCell.setAnimal(animal); // если клетка пустая, животное ничего не делает, просто там находится
+            newCell.setAnimal(animal);
         } else {
-            // в случае, если клетка кем-то занята и съесть это нельзя - отмена перемещения
-            System.out.println("Объекты не могут находится на одной клетке.");
+            System.out.println(animal.getSymbol() + " не может двигаться на занятую клетку.");
             return;
+        }
+
+        animal.setPosition(newX, newY);
+    }
+
+    public void growPlant() {
+        if (random.nextInt(100) < 60) { // рандомное появление растений в случайном месте карты, 60%
+            int x = random.nextInt(WIDTH);
+            int y = random.nextInt(HEIGHT);
+
+            if (grid[y][x] instanceof EmptyCell) {
+                grid[y][x] = CellFactory.createCell("plant");
+                System.out.println("Растения выросли на позиции (" + x + ", " + y + ")");
+            }
         }
     }
 
-    public void printField() { // выводит текущую ситуацию на поле
+    public void printField() {
 
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
-                if (grid[i][j].getAnimal() != null) {
-                    System.out.println(grid[i][j].getAnimal().getSymbol() + " ");
-                } else {
-                    System.out.print(grid[i][j].getSymbol() + " ");
+                String symbol = grid[i][j].getSymbol();
+                Animal animal = grid[i][j].getAnimal();
+                if (animal != null) {
+                    symbol = animal.getSymbol();
                 }
+                System.out.print(symbol + " ");
             }
             System.out.println();
         }
     }
-
-    // метод, чтобы растения росли только на случайных пустых клетках
-    public void growPlant() {
-        int x = random.nextInt(WIDTH);
-        int y = random.nextInt(HEIGHT);
-
-        if (grid[y][x].getAnimal() == null) {   // чтобы могла расти только на пустых клетках
-            grid[y][x] = new Plant();
-            System.out.println("Растения выросли на позиции (" + x + ", " + y + ")");
-        }
-    }
 }
+
 
 

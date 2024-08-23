@@ -1,29 +1,24 @@
 package Main;
 
-import Animals.Rabbit;
-import Animals.Wolf;
+import Animals.Animal;
+import Animals.AnimalFactory;
 import Field.Field;
-import Threads.SimulatorThread;
+import Field.SimulatorThread;
 
 
 public class StartingSurvive {
-        public static void main(String[] args) throws InterruptedException {
 
+    public static void main(String[] args) {
+        Field field = new Field();
 
-            Field field = new Field();
-            Rabbit rabbit = new Rabbit(2,1);
-            Wolf wolf = new Wolf(4,2);
+        Animal rabbit = AnimalFactory.createAnimal("rabbit", 2, 1);
+        Animal wolf = AnimalFactory.createAnimal("wolf", 4, 2);
 
-            field.placeAnimal(rabbit, rabbit.x, rabbit.y);
-            field.placeAnimal(wolf, wolf.x, wolf.y);
+        field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());
+        field.placeAnimal(wolf, wolf.getX(), wolf.getY());
 
-            SimulatorThread sumilation = new SimulatorThread(field, rabbit, wolf);
-            Thread thread = new Thread(sumilation);
-            thread.start();
-        }
+        SimulatorThread simulation = new SimulatorThread(field, rabbit, wolf);
+        Thread thread = new Thread (simulation);
+        thread.start();
     }
-
-
-
-
-
+}
