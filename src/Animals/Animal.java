@@ -19,8 +19,6 @@ public abstract class Animal {
 
     public abstract boolean canEat(Cell cell);
 
-    public abstract boolean Reproduce();
-
     public int getX() {
         return x;
     }
@@ -34,6 +32,7 @@ public abstract class Animal {
         this.y = y;
     }
 }
+
 
 
 

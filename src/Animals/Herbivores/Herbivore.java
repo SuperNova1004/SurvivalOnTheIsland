@@ -12,9 +12,10 @@ public abstract class Herbivore extends Animal {
 
     @Override
     public boolean canEat(Cell cell) {
-        return cell instanceof Plant; // вот тут и различия между травоядным и хищником
+        return cell instanceof Plant;
     }
 }
+
 
 
 

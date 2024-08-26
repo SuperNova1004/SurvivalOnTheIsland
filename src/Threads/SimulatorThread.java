@@ -25,7 +25,7 @@ public class SimulatorThread implements Runnable {
             System.out.println();
 
             try {
-                Thread.sleep(4000); // Задержка в 4 секунды
+                Thread.sleep(40); // Задержка в 4 секунды
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

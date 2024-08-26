@@ -2,6 +2,7 @@ package Animals.Herbivores;
 
 import Field.Field;
 
+
 public class Rabbit extends Herbivore {
     public Rabbit(int x, int y) {
         super(x, y);
@@ -20,11 +21,6 @@ public class Rabbit extends Herbivore {
         if (newX >= 0 && newX < Field.WIDTH && newY >= 0 && newY < Field.HEIGHT) {
             field.moveAnimal(this, newX, newY);
         }
-    }
-
-    @Override
-    public boolean Reproduce() {
-        return false;
     }
 }
 
