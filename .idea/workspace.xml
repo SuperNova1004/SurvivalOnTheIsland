@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="Полный откат кода до версии 23.08. пытался добавить неизвестно что, ничего не получилось, всё сломал, пробую снова.">
+    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="added cosmetic changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animals/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/AnimalFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Field/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/StartingSurvive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartingSurvive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Herbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Rabbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Predator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Wolf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Threads/SimulatorThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Threads/SimulatorThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,8 +193,27 @@
       <option name="project" value="LOCAL" />
       <updated>1724712415281</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added cosmetic changes">
+      <option name="closed" value="true" />
+      <created>1724713745228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724713745228</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Переделываю уже 6 раз. В этот раз точно получится без ошибок ;D" />
@@ -202,11 +222,11 @@
     <MESSAGE value="Первый рабочий прототип программы с одним потоком, 1 зайцем и 1 волком. Это, определённо, успех!" />
     <MESSAGE value="Полностью рабочая игрушка с сохранением прогресса" />
     <MESSAGE value="added package &quot;Threads&quot;" />
-    <MESSAGE value="added cosmetic changes" />
     <MESSAGE value="added a River" />
     <MESSAGE value="added new classes and reformat" />
     <MESSAGE value="save changes" />
     <MESSAGE value="Полный откат кода до версии 23.08. пытался добавить неизвестно что, ничего не получилось, всё сломал, пробую снова." />
-    <option name="LAST_COMMIT_MESSAGE" value="Полный откат кода до версии 23.08. пытался добавить неизвестно что, ничего не получилось, всё сломал, пробую снова." />
+    <MESSAGE value="added cosmetic changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cosmetic changes" />
   </component>
 </project>
