@@ -13,6 +13,9 @@ public class StartingSurvive {
         Animal wolf = AnimalFactory.createAnimal("wolf", 1, 2);
 
 
+
+
+
         field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());
         field.placeAnimal(wolf, wolf.getX(), wolf.getY());
 

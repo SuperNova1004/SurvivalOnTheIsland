@@ -11,7 +11,7 @@ public class AnimalFactory {
             case "rabbit":
                 return new Rabbit(x, y);
             default:
-                throw new IllegalArgumentException("Unknown animal type: " + type);
+                throw new IllegalArgumentException("Неизвестное животное : " + type);
         }
     }
 }

@@ -7,6 +7,10 @@ import Cells.EmptyCell;
 
 import java.util.Random;
 
+
+// создаём поле, на котором будет происходить экшен!
+
+
 public class Field {
     public static final int WIDTH = 5;
     public static final int HEIGHT = 5;
@@ -56,8 +60,8 @@ public class Field {
         animal.setPosition(newX, newY);
     }
 
-    public void growGrass() {
-        if (random.nextInt(100) < 30) {
+    public void growPlant() {
+        if (random.nextInt(100) < 60) { // 60% шанс роста растений
             int x = random.nextInt(WIDTH);
             int y = random.nextInt(HEIGHT);
 

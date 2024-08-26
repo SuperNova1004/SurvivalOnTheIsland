@@ -2,6 +2,8 @@ package Cells;
 
 import Animals.Animal;
 
+// создаём клетки на поле
+
 public abstract class Cell {
     private Animal animal;
 
