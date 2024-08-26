@@ -1,16 +1,25 @@
 package Animals;
 
-import Cells.Cell;
 import Field.Field;
+import Cells.Cell;
+import java.util.Random;
 
 public abstract class Animal {
-    protected int x;
-    protected int y;
+    protected int x, y;
+    protected Random random = new Random();
 
     public Animal(int x, int y) {
         this.x = x;
         this.y = y;
     }
+
+    public abstract String getSymbol();
+
+    public abstract void move(Field field);
+
+    public abstract boolean canEat(Cell cell);
+
+    public abstract boolean Reproduce();
 
     public int getX() {
         return x;
@@ -24,13 +33,10 @@ public abstract class Animal {
         this.x = x;
         this.y = y;
     }
-
-    public abstract String getSymbol();
-
-    public abstract void move(Field field);
-
-    public abstract boolean canEat(Cell cell);
 }
+
+
+
 
 
 

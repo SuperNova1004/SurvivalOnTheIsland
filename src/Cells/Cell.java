@@ -1,43 +1,24 @@
 package Cells;
 
 import Animals.Animal;
-import java.util.ArrayList;
-import java.util.List;
 
-// создаём клетки на поле
-
-public class Cell {
-    private List<Animal> animals;
+public abstract class Cell {
+    private Animal animal;
 
     public Cell() {
-        this.animals = new ArrayList<>();
+        this.animal = null;
     }
 
-    public List<Animal> getAnimals() {
-        return animals;
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
     }
 
-    public void addAnimal(Animal animal) {
-        animals.add(animal);
+    public Animal getAnimal() {
+        return this.animal;
     }
 
-    public void removeAnimal(Animal animal) {
-        animals.remove(animal);
-    }
-
-    public boolean hasAnimal() {
-        return !animals.isEmpty();
-    }
-
-    public Animal getFirstAnimal() {
-        return animals.isEmpty() ? null : animals.get(0);
-    }
-
-    public String getSymbol() {
-        if (!animals.isEmpty()) {
-            return animals.get(0).getSymbol();
-        }
-        return " ";
-    }
+    public abstract String getSymbol();
 }
+
+
 

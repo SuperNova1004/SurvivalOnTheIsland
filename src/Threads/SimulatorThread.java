@@ -20,16 +20,17 @@ public class SimulatorThread implements Runnable {
             System.out.println("Шаг " + (i + 1));
             rabbit.move(field);
             wolf.move(field);
-            field.growPlant(); // Рандомный рост травы
+            field.growGrass(); // Рандомный рост травы
             field.printField();
             System.out.println();
 
             try {
-                Thread.sleep(4000); // Задержка в 3 секунды
+                Thread.sleep(3000); // Задержка в 3 секунды
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     }
 }
+
 
