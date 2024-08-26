@@ -1,8 +1,7 @@
 package Animals.Predators;
 
-import Animals.Herbivores.Herbivore;
+import Animals.Herbivores.Mouse;
 import Animals.Herbivores.Rabbit;
-import Field.Field;
 import Cells.Cell;
 
 public class Fox extends Predator {
@@ -17,7 +16,8 @@ public class Fox extends Predator {
 
     @Override
     public boolean canEat(Cell cell) {
-        return cell.getAnimal() instanceof Herbivore;
+        return cell.getAnimals().stream().anyMatch(animal -> animal instanceof Rabbit || animal instanceof Mouse);
     }
 }
+
 

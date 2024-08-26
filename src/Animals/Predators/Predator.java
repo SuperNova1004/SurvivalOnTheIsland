@@ -5,6 +5,8 @@ import Cells.Cell;
 import Field.Field;
 import utils.Config;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public abstract class Predator extends Animal {
     private int hunger;
 
@@ -15,10 +17,11 @@ public abstract class Predator extends Animal {
 
     @Override
     public void move(Field field) {
-        // Логика перемещения
+        // Логика перемещения, если не найдёт себе еду, то умрёт
+
         hunger--;
         if (hunger <= 0) {
-            field.removeAnimal(this);
+            field.removeAnimal(this);  // Удаление животного из поля
         }
     }
 
@@ -35,5 +38,6 @@ public abstract class Predator extends Animal {
         return false;
     }
 }
+
 
 

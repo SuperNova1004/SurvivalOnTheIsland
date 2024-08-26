@@ -1,12 +1,14 @@
 package Field;
 
 import Animals.Animal;
-import Animals.Predators.Predator;
 import Animals.Herbivores.Herbivore;
+import Animals.Predators.Predator;
 import Cells.Cell;
-import Cells.EmptyCell;  // Убедитесь, что этот класс импортирован
-import Cells.Plant;  // Убедитесь, что этот класс импортирован
 import Cells.CellFactory;
+import Cells.EmptyCell;
+import java.util.List;
+
+// Добавляем поле, на котором будет твориться экшен! Фактически, самый жирный и основной класс из всего проекта
 
 public class Field {
     public static final int WIDTH = 10;
@@ -31,6 +33,13 @@ public class Field {
         grid[animal.getX()][animal.getY()].addAnimal(animal);
     }
 
+    public void removeAnimal(Animal animal) {
+        Cell cell = grid[animal.getX()][animal.getY()];
+        if (cell != null) {
+            cell.removeAnimal(animal);
+        }
+    }
+
     public void moveAnimal(Animal animal, int newX, int newY) {
         Cell currentCell = grid[animal.getX()][animal.getY()];
         Cell newCell = grid[newX][newY];
@@ -38,7 +47,7 @@ public class Field {
         currentCell.removeAnimal(animal);
         animal.setPosition(newX, newY);
 
-        if (animal.canEat(newCell)) {  // Этот метод принимает объект типа Cell
+        if (animal.canEat(newCell)) {
             newCell.removeAnimal(newCell.getFirstAnimal());
         }
 
@@ -62,17 +71,17 @@ public class Field {
         }
 
         if (herbivoresCount < 5) {
-            System.out.println("Predators win!");
+            System.out.println("Хищники победили! Выживает сильнейший!");
             return true;
         } else if (predatorsCount < 5) {
-            System.out.println("Herbivores win!");
+            System.out.println("Травоядные победили! Больше тут никого не съедят (только растения)!");
             return true;
         }
 
         return false;
     }
 
-    public void growGrass() {
+    public void growPlant() {
         int x = (int) (Math.random() * WIDTH);
         int y = (int) (Math.random() * HEIGHT);
 
@@ -120,6 +129,7 @@ public class Field {
         }
     }
 }
+
 
 
 

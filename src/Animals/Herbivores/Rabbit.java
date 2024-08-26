@@ -9,8 +9,6 @@ public class Rabbit extends Herbivore {
     public String getSymbol() {
         return "🐇"; // Символ зайца
     }
-
-
 }
 
 

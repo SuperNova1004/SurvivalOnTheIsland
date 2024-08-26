@@ -13,12 +13,12 @@ public class StartingSurvive {
         field.addAnimal(new Rabbit(2, 2));
 
         // Растим траву и реку
-        field.growGrass();
+        field.growPlant();
         field.createRiver();
 
         while (!field.checkEndGame()) {
             field.reproduceAnimals();
-            field.growGrass();
+            field.growPlant();
             field.printField();
             try {
                 Thread.sleep(4000); // Делаем паузу в 4 секунды между ходами
