@@ -2,8 +2,8 @@ package Cells;
 
 public class CellFactory {
     public static Cell createCell(String type) {
-        switch (type) {
-            case "plant":
+        switch (type.toLowerCase()) {
+            case "grass":
                 return new Plant();
             case "empty":
             default:
@@ -11,4 +11,5 @@ public class CellFactory {
         }
     }
 }
+
 

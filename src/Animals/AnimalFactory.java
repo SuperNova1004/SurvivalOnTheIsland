@@ -1,5 +1,8 @@
 package Animals;
 
+import Animals.Herbivores.Rabbit;
+import Animals.Predators.Wolf;
+
 public class AnimalFactory {
 
     public static Animal createAnimal(String type, int x, int y) {

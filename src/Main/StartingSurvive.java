@@ -1,24 +1,31 @@
 package Main;
 
-import Animals.Animal;
-import Animals.AnimalFactory;
 import Field.Field;
-import Threads.SimulatorThread;
-
+import Animals.Predators.Wolf;
+import Animals.Herbivores.Rabbit;
 
 public class StartingSurvive {
-
     public static void main(String[] args) {
         Field field = new Field();
 
-        Animal rabbit = AnimalFactory.createAnimal("rabbit", 5, 5);
-        Animal wolf = AnimalFactory.createAnimal("wolf", 10, 4);
+        // Добавляем животных
+        field.addAnimal(new Wolf(0, 0));
+        field.addAnimal(new Rabbit(2, 2));
 
-        field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());
-        field.placeAnimal(wolf, wolf.getX(), wolf.getY());
+        // Растим траву и реку
+        field.growGrass();
+        field.createRiver();
 
-        SimulatorThread simulation = new SimulatorThread(field, rabbit, wolf);
-        Thread thread = new Thread (simulation);
-        thread.start();
+        while (!field.checkEndGame()) {
+            field.reproduceAnimals();
+            field.growGrass();
+            field.printField();
+            try {
+                Thread.sleep(4000); // Делаем паузу в 4 секунды между ходами
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
+

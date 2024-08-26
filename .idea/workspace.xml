@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="added cosmetic changes">
-      <change afterPath="$PROJECT_DIR$/src/Field/River.java" afterDir="false" />
+    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="added a River">
+      <change afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animals/Predators/Fox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/AnimalFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Herbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Predator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Rabbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cells/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cells/CellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/CellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/StartingSurvive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartingSurvive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724376015212</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added a River">
+      <option name="closed" value="true" />
+      <created>1724700417174</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724700417174</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +183,7 @@
     <MESSAGE value="Полностью рабочая игрушка с сохранением прогресса" />
     <MESSAGE value="added package &quot;Threads&quot;" />
     <MESSAGE value="added cosmetic changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cosmetic changes" />
+    <MESSAGE value="added a River" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a River" />
   </component>
 </project>
