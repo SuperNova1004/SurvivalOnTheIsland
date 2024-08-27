@@ -1,10 +1,11 @@
 package Animals.Predators;
 
 import Animals.Herbivores.Rabbit;
-import Field.Field;
 import Cells.Cell;
+import Field.Field;
 
 public class Wolf extends Predator {
+
     public Wolf(int x, int y) {
         super(x, y);
     }

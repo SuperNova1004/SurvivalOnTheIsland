@@ -1,12 +1,15 @@
 package Animals.Herbivores;
 
+
+import Cells.Cell;
 import Field.Field;
 
-
 public class Rabbit extends Herbivore {
+
     public Rabbit(int x, int y) {
         super(x, y);
     }
+
 
     @Override
     public String getSymbol() {
