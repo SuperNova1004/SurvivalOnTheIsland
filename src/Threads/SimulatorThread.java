@@ -31,7 +31,7 @@ public class SimulatorThread implements Runnable {
         this.boar = boar;
         this.buffalo = buffalo;
         this.caterpillar = caterpillar;
-        this. deer = deer;
+        this.deer = deer;
         this.duck = duck;
         this.goat = goat;
         this.horse = horse;
@@ -49,12 +49,25 @@ public class SimulatorThread implements Runnable {
             System.out.println("Шаг " + (i + 1));
             rabbit.move(field);
             wolf.move(field);
+            boar.move(field);
+            buffalo.move(field);
+            caterpillar.move(field);
+            deer.move(field);
+            duck.move(field);
+            goat.move(field);
+            horse.move(field);
+            mouse.move(field);
+            sheep.move(field);
+            bear.move(field);
+            eagle.move(field);
+            fox.move(field);
+            snake.move(field);
             field.growPlant(); // Рандомный рост травы
             field.printField();
             System.out.println();
 
             try {
-                Thread.sleep(40); // Задержка в 4 секунды
+                Thread.sleep(4000); // Задержка в 4 секунды
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
