@@ -1,7 +1,6 @@
 package Animals.Herbivores;
 
-import Cells.Cell;
-import Cells.Plant;
+
 import Field.Field;
 
 public class Horse extends Herbivore {

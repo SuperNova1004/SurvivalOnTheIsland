@@ -5,7 +5,12 @@ import Animals.AnimalFactory;
 import Field.Field;
 import Threads.SimulatorThread;
 
+
+// запускать симулятор выживания можно тут! Наслаждайтесь!
+
+
 public class StartingSurvive {
+
     public static void main(String[] args) {
         Field field = new Field();
 
@@ -27,13 +32,12 @@ public class StartingSurvive {
 
 
 
-
         field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());
         field.placeAnimal(wolf, wolf.getX(), wolf.getY());
 
 
-        SimulatorThread simulation = new SimulatorThread(field, rabbit, wolf, boar, buffalo, caterpillar, deer, duck, goat,
-                horse, mouse, sheep, bear, eagle, fox, snake);
+        SimulatorThread simulation = new SimulatorThread(field, rabbit, wolf, boar, buffalo, caterpillar, deer, duck,
+                goat, horse, mouse, sheep, bear, eagle, fox, snake);
         Thread thread = new Thread(simulation);
         thread.start();
     }

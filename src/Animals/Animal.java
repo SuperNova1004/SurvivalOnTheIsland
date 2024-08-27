@@ -4,6 +4,8 @@ import Field.Field;
 import Cells.Cell;
 import java.util.Random;
 
+// общий абстрактный класс для всех животных
+
 public abstract class Animal {
     protected int x, y;
     protected Random random = new Random();

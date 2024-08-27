@@ -10,26 +10,32 @@ import Cells.EmptyCell;
 import java.util.Random;
 
 
-// создаём поле, на котором будет происходить экшен!
+// создаём поле, на котором будет происходить экшен! самый тяжелый класс
 
 
 public class Field {
+
     public static final int WIDTH = 12;
     public static final int HEIGHT = 12;
     private Cell[][] grid;
     private Random random = new Random();
 
     public Field() {
+
         grid = new Cell[HEIGHT][WIDTH];
         for (int i = 0; i < HEIGHT; i++) {
+
             for (int j = 0; j < WIDTH; j++) {
+
                 grid[i][j] = CellFactory.createCell("empty");
             }
         }
     }
 
-    public void placeAnimal(Animal animal, int x, int y) {
+    public void placeAnimal(Animal animal, int x, int y) { // учитываем расположение других животных
+
         if (grid[y][x].getAnimal() != null) {
+
             System.out.println("Клетка (" + x + ", " + y + ") уже занята.");
         }
         grid[y][x].setAnimal(animal);
@@ -37,13 +43,17 @@ public class Field {
     }
 
     private boolean canHerbivoreEat(Animal animal, Cell cell) {
+
         // Проверяем, является ли животное травоядным
         if (animal instanceof Herbivore) {
+
             // Травоядное не может съесть хищника и других травоядных
             if (cell.getAnimal() instanceof Herbivore) {
+
                 return false; // Травоядное не может съесть другого травоядного
             }
             if (cell.getAnimal() instanceof Predator) {
+
                 return false; // Травоядное не может съесть хищника
             }
         }
@@ -107,7 +117,7 @@ public class Field {
         }
     }
 
-    public void printField() {
+    public void printField() { // стандартная логика реализации
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
                 String symbol = grid[i][j].getSymbol();

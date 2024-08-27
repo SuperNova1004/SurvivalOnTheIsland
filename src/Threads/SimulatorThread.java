@@ -3,6 +3,8 @@ package Threads;
 import Animals.Animal;
 import Field.Field;
 
+// вероятно, это можно как-то сократить, добавив конфигурации, но я этого ещё не знаю :D
+
 public class SimulatorThread implements Runnable {
     private Field field;
     private Animal rabbit;
@@ -67,7 +69,7 @@ public class SimulatorThread implements Runnable {
             System.out.println();
 
             try {
-                Thread.sleep(40); // Задержка в 4 секунды
+                Thread.sleep(4000); // Задержка в 4 секунды, либо вы можете выставить, какую захотите
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
