@@ -26,6 +26,7 @@ public class Wolf extends Predator {
 
     @Override
     public boolean canEat(Cell cell) {
+
         return cell.getAnimal() instanceof Rabbit;
     }
 }
