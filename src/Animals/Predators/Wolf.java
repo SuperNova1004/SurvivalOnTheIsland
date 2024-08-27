@@ -1,6 +1,6 @@
 package Animals.Predators;
 
-import Animals.Herbivores.Rabbit;
+import Animals.Herbivores.*;
 import Cells.Cell;
 import Field.Field;
 
