@@ -47,7 +47,7 @@ public class SimulatorThread implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 100; i++) { // 100 шагов симуляции
+        for (int i = 0; i < 150; i++) { // 100 шагов симуляции
             System.out.println("Шаг " + (i + 1));
             rabbit.move(field);
             wolf.move(field);

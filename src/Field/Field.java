@@ -15,8 +15,8 @@ import java.util.Random;
 
 public class Field {
 
-    public static final int WIDTH = 12;
-    public static final int HEIGHT = 12;
+    public static final int WIDTH = 20;   // выбираем комфортный размер игрового поля
+    public static final int HEIGHT = 20;
     private Cell[][] grid;
     private Random random = new Random();
 

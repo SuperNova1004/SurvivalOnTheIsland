@@ -16,19 +16,19 @@ public class StartingSurvive {
 
         Animal rabbit = AnimalFactory.createAnimal("rabbit", 2, 1);
         Animal wolf = AnimalFactory.createAnimal("wolf", 1, 2);
-        Animal boar = AnimalFactory.createAnimal("boar", 2, 2);
-        Animal buffalo = AnimalFactory.createAnimal("buffalo", 2, 3);
+        Animal boar = AnimalFactory.createAnimal("boar", 10, 2);
+        Animal buffalo = AnimalFactory.createAnimal("buffalo", 2, 4);
         Animal caterpillar = AnimalFactory.createAnimal("caterpillar", 3, 3);
         Animal deer = AnimalFactory.createAnimal("deer", 4, 3);
-        Animal duck = AnimalFactory.createAnimal("duck", 4, 4);
-        Animal goat = AnimalFactory.createAnimal("goat", 5, 4);
+        Animal duck = AnimalFactory.createAnimal("duck", 8, 4);
+        Animal goat = AnimalFactory.createAnimal("goat", 5, 1);
         Animal horse = AnimalFactory.createAnimal("horse", 5, 5);
-        Animal mouse = AnimalFactory.createAnimal("mouse", 6, 5);
+        Animal mouse = AnimalFactory.createAnimal("mouse", 6, 11);
         Animal sheep = AnimalFactory.createAnimal("sheep", 6, 6);
-        Animal bear = AnimalFactory.createAnimal("bear", 7, 6);
-        Animal eagle = AnimalFactory.createAnimal("eagle", 7, 7);
-        Animal fox = AnimalFactory.createAnimal("fox", 8, 8);
-        Animal snake = AnimalFactory.createAnimal("snake", 9, 8);
+        Animal bear = AnimalFactory.createAnimal("bear", 7, 9);
+        Animal eagle = AnimalFactory.createAnimal("eagle", 10, 7);
+        Animal fox = AnimalFactory.createAnimal("fox", 3, 12);
+        Animal snake = AnimalFactory.createAnimal("snake", 1, 8);
 
 
 
