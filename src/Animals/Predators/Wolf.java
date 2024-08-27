@@ -1,8 +1,5 @@
 package Animals.Predators;
 
-import Animals.Animal;
-import Animals.Herbivores.*;
-import Cells.Cell;
 import Field.Field;
 
 public class Wolf extends Predator {
@@ -24,12 +21,6 @@ public class Wolf extends Predator {
         if (newX >= 0 && newX < Field.WIDTH && newY >= 0 && newY < Field.HEIGHT) {
             field.moveAnimal(this, newX, newY);
         }
-    }
-
-    @Override
-    public boolean canEat(Cell cell) {
-        Animal animal = cell.getAnimal();
-        return animal instanceof Herbivore; // именно над этой строчкой я бился почти 8 часов. Теперь
     }
 }
 

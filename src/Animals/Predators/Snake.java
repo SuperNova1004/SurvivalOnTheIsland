@@ -1,7 +1,5 @@
 package Animals.Predators;
 
-import Animals.Herbivores.*;
-import Cells.Cell;
 import Field.Field;
 
 public class Snake extends Predator {
@@ -23,11 +21,5 @@ public class Snake extends Predator {
         if (newX >= 0 && newX < Field.WIDTH && newY >= 0 && newY < Field.HEIGHT) {
             field.moveAnimal(this, newX, newY);
         }
-    }
-
-    @Override
-    public boolean canEat(Cell cell) {
-
-        return cell.getAnimal() instanceof Rabbit;
     }
 }

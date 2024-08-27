@@ -1,5 +1,8 @@
 package Animals.Herbivores;
 
+
+import Cells.Cell;
+import Cells.Plant;
 import Field.Field;
 
 public class Duck extends Herbivore {
@@ -24,3 +27,4 @@ public class Duck extends Herbivore {
         }
     }
 }
+

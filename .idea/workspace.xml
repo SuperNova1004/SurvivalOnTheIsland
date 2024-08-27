@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="Каким-то чудесным образом оно работает, осталось реализовать поедание">
+    <list default="true" id="d001c1a2-fb86-4bca-ac6e-9ee947b8819c" name="Changes" comment="Есть успехи, теперь травоядные перестали жрать хищников">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Herbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Boar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Boar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Buffalo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Buffalo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Caterpillar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Caterpillar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Deer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Deer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Duck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Goat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Mouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Rabbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Herbivores/Sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Herbivores/Sheep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Eagle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Fox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Predator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Animals/Predators/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animals/Predators/Wolf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cells/EmptyCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cells/EmptyCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Threads/SimulatorThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Threads/SimulatorThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Field/Field.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724788775979</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Есть успехи, теперь травоядные перестали жрать хищников">
+      <option name="closed" value="true" />
+      <created>1724792743286</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1724792743286</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,6 +309,7 @@
     <MESSAGE value="added more animals" />
     <MESSAGE value="added changes to animals" />
     <MESSAGE value="Каким-то чудесным образом оно работает, осталось реализовать поедание" />
-    <option name="LAST_COMMIT_MESSAGE" value="Каким-то чудесным образом оно работает, осталось реализовать поедание" />
+    <MESSAGE value="Есть успехи, теперь травоядные перестали жрать хищников" />
+    <option name="LAST_COMMIT_MESSAGE" value="Есть успехи, теперь травоядные перестали жрать хищников" />
   </component>
 </project>
