@@ -11,10 +11,14 @@ public class StartingSurvive {
 
         Animal rabbit = AnimalFactory.createAnimal("rabbit", 2, 1);
         Animal wolf = AnimalFactory.createAnimal("wolf", 1, 2);
+        Animal rabbit1 = AnimalFactory.createAnimal("rabbit", 3, 1);
+        Animal wolf1 = AnimalFactory.createAnimal("wolf", 4, 2);
 
 
         field.placeAnimal(rabbit, rabbit.getX(), rabbit.getY());
         field.placeAnimal(wolf, wolf.getX(), wolf.getY());
+        field.placeAnimal(rabbit1, rabbit1.getX(), rabbit1.getY());
+        field.placeAnimal(wolf1, wolf1.getX(), wolf1.getY());
 
         SimulatorThread simulation = new SimulatorThread(field, rabbit, wolf);
         Thread thread = new Thread(simulation);
