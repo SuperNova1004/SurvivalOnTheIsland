@@ -1,5 +1,6 @@
 package Animals.Predators;
 
+import Animals.Animal;
 import Animals.Herbivores.*;
 import Cells.Cell;
 import Field.Field;
@@ -27,8 +28,8 @@ public class Wolf extends Predator {
 
     @Override
     public boolean canEat(Cell cell) {
-
-        return cell.getAnimal() instanceof Rabbit;
+        Animal animal = cell.getAnimal();
+        return animal instanceof Herbivore; // именно над этой строчкой я бился почти 8 часов. Теперь
     }
 }
 

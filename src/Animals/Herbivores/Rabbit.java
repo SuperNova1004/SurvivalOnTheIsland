@@ -1,5 +1,6 @@
 package Animals.Herbivores;
 
+
 import Field.Field;
 
 public class Rabbit extends Herbivore {
